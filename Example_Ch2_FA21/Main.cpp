@@ -18,6 +18,15 @@ int main()
 
 	cout << "Back in main!\n\n";
 
+	float one = 1, sum = 0;
+
+	sum = sum + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f;
+
+	if (one == sum)
+		cout << one << " = " << sum << endl << endl;
+	else
+		cout << one << " != " << sum << endl << endl;
+
 	return 0;
 }
 
