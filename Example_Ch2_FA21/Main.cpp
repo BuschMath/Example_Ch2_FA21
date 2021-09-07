@@ -1,42 +1,41 @@
+/* Name
+*  Class
+*  Lab
+*  Customer info demo
+*/
+
 #include <iostream>
 
 using namespace std;
 
-// Function Prototype
-void ExampleFunction();
+// inputs customer info
+void Input();
+// output customer info to screen
+void Output();
 
-int Add(int a, int b);
+// first name
+string fName;
+// last name
+string lName;
 
 int main()
 {
-	cout << "In main!\n" << endl;
-
-	// Function Call
-	ExampleFunction();
-
-	cout << Add(2, 3) << endl << endl;
-
-	cout << "Back in main!\n\n";
-
-	float one = 1, sum = 0;
-
-	sum = sum + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f;
-
-	if (one == sum)
-		cout << one << " = " << sum << endl << endl;
-	else
-		cout << one << " != " << sum << endl << endl;
+	Input();
+	Output();
 
 	return 0;
 }
 
-// Function Definition
-void ExampleFunction()
+void Input()
 {
-	cout << "In function!\n\n";
+	cout << "What is your first name: ";
+	cin >> fName;
+
+	cout << "\nWhat is your last name: ";
+	cin >> lName;
 }
 
-int Add(int a, int b)
+void Output()
 {
-	return a + b;
+	cout << "\n" << fName << " " << lName;
 }
